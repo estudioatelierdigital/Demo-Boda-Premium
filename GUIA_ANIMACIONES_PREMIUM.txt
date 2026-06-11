@@ -1,0 +1,44 @@
+GUÍA DE ANIMACIONES PREMIUM
+
+Dónde están:
+- HTML: elementos extra al inicio del body:
+  premium-loader, scroll-progress, ambient-orbs y floating-particles.
+
+- CSS: bloque final llamado:
+  ANIMACIONES PREMIUM - EXTRA
+
+- JS: bloque llamado:
+  ANIMACIONES PREMIUM
+
+Funciones principales en script.js:
+- initPremiumLoader(): pantalla de carga inicial.
+- initPremiumParticles(): partículas doradas flotantes.
+- initPremiumScrollProgress(): barra superior de progreso.
+- initPremiumReveal(): animaciones al hacer scroll.
+- initPremiumPhotoEffects(): parallax y entrada de fotos.
+- initPremiumCardTilt(): inclinación sutil en tarjetas en escritorio.
+- initPremiumButtonRipples(): efecto ripple en botones.
+
+Cómo bajar la intensidad:
+- Reducir particleCount en initPremiumParticles().
+- Reducir photoMovement en initPremiumPhotoEffects().
+- Reducir grados en initPremiumCardTilt().
+- Eliminar la clase floating-particles del HTML si no se quieren partículas.
+
+Cómo desactivar por completo:
+1. Quitar del index.html:
+   - premium-loader
+   - scroll-progress
+   - ambient-orbs
+   - floating-particles
+
+2. En script.js quitar las llamadas:
+   - initPremiumLoader();
+   - initPremiumParticles();
+   - initPremiumScrollProgress();
+   - initPremiumReveal();
+   - initPremiumPhotoEffects();
+   - initPremiumCardTilt();
+   - initPremiumButtonRipples();
+
+3. En style.css quitar el bloque final de animaciones premium.
